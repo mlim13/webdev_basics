@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <label for="first_name">First Name: </label>
+        <input type="text" name="first_name" id="first_name" placeholder="John" required>
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name" id="last_name" placeholder="Smith" required>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required maxlength="10" minlength="5">
+        </div>
+        <div>
+            Birthday: 
+            <select name="day" id="">
+                <option value="">Day</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+            <select name="month" id="">
+                <option value="">Month</option>
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+            </select>
+            <select name="year" id="">
+                <option value="">Year</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+            </select>
+        </div>
+            <label for="agreeance">I agree to the terms and conditions </label>
+            <input type="checkbox" name="agreeance" id="agreeance" required>
+        <div>
+            <button>Submit!</button>
+        </div>
+    </form>
+    
+</body>
+</html>

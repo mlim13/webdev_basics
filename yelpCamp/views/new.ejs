@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <h1 class="text-center pb-3">Add campground</h1>
+    <!-- using inline style below. REFACTOR later -->
+    <div style="width: 30%; margin: 0 auto;"> 
+        <form action="/campgrounds" method="POST">
+            <input class="form-control" name="newCampgroundName" type="text" placeholder="name">
+            <input class="form-control" name="newCampgroundImg" type="text" placeholder="url">
+            <button class="btn btn-lg btn-primary btn-block">Submit</button>
+        </form>
+        <a href="/campgrounds">Go back</a>
+    </div> 
+</div>
+
+<%- include("partials/footer") %>
